@@ -1,0 +1,52 @@
+{
+  "name": "dsh-retro-crt-theme",
+  "version": "0.1.1",
+  "description": "Retro CRT phosphor theme: pure-black Matrix green / 40K amber-green / TFEL amber screens with bold glowing text and a code-rain boot animation",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charonpi/dsh-retro-crt-theme.git"
+  },
+  "engines": {
+    "dsh": ">=0.2.1"
+  },
+  "keywords": ["dsh", "dsh-plugin", "dsh-theme", "retro", "crt", "matrix", "phosphor"],
+  "author": "charonpi",
+  "license": "MIT",
+  "dsh": {
+    "plugin": {
+      "title": {
+        "zh": "复古 CRT 磷光主题",
+        "en": "Retro CRT Phosphor Theme"
+      },
+      "description": {
+        "zh": "纯黑底、粗胖字、强泛光的 CRT 荧光屏主题：黑客帝国 P1 绿 / 战锤40K 黄绿 / TFEL 琥珀三种屏种，附代码雨开机动画与 BIOS 风控制面板。",
+        "en": "A pure-black CRT phosphor theme with bold glowing text: Matrix P1 green, Warhammer 40K amber-green, or TFEL amber, plus a code-rain boot animation and a BIOS-style control panel."
+      },
+      "author": "charonpi",
+      "homepage": "https://github.com/charonpi/dsh-retro-crt-theme"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme"
+      ],
+      "immediately": true
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "README.md"
+  ]
+}

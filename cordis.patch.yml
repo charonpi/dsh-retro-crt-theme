@@ -1,0 +1,6 @@
+# dsh-retro-crt-theme bundle patch.
+# Installed via `dsh plugin --profile <p> add link:<dir>`, the profile mounts
+# this layer automatically — no manual cordis.patch.yml editing needed.
+- insert:
+    - id: retro-crt-theme
+      name: dsh-retro-crt-theme
