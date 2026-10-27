@@ -1,6 +1,6 @@
 {
   "name": "dsh-retro-crt-theme",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Retro CRT phosphor theme: pure-black Matrix green / 40K amber-green / TFEL amber screens with bold glowing text and a code-rain boot animation",
   "type": "module",
   "main": "lib/index.js",
@@ -12,9 +12,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/charonpi/dsh-retro-crt-theme.git"
-  },
-  "engines": {
-    "dsh": ">=0.2.1"
   },
   "keywords": ["dsh", "dsh-plugin", "dsh-theme", "retro", "crt", "matrix", "phosphor"],
   "author": "charonpi",
